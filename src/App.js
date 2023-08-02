@@ -238,14 +238,14 @@ function FrmListarCliente(){
           <tbody>
           {clientes.map(cliente => (
             <tr>
-              <td> {cliente.clienteId} </td>
+              <td> {cliente.clienteid} </td>
               <td> {cliente.nome}</td>
               <td> {cliente.cpf}</td>
               <td> 
-                <Button variant="primary" onClick={() => {navigate(`/frmcadastrocliente/${cliente.clienteId}`)}}>Editar</Button>
+                <Button variant="primary" onClick={() => {navigate(`/frmcadastrocliente/${cliente.clienteid}`)}}>Editar</Button>
               </td>                
               <td>                  
-                <Button variant="primary" onClick={() => {navigate(`/frmexcluircliente/${cliente.clienteId}`)}}>Excluir</Button>
+                <Button variant="primary" onClick={() => {navigate(`/frmexcluircliente/${cliente.clienteid}`)}}>Excluir</Button>
               </td>
             </tr>
           ))}
